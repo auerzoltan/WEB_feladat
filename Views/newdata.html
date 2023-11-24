@@ -1,0 +1,38 @@
+<h3 class="mb-3">Adatrögzítés</h3>
+
+<div class="alert alert-danger d-none" role="alert" id="alertBox">
+    <!-- alertmessages shows here -->
+</div>
+
+<div class="form-floating mb-3">
+    <input type="date" class="form-control" id="date" placeholder="" max="">
+    <label for="date">Dátum</label>
+</div>
+
+<div class="form-floating mb-3">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0">
+    <label class="form-check-label" for="inlineRadio1">Kiadás</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1">
+    <label class="form-check-label" for="inlineRadio2">Bevétel</label>
+    </div>
+</div>
+
+<div class="form-floating mb-3">
+    <input type="number" class="form-control" id="items" placeholder="" min="0" value="0">
+    <label for="items">Pénzmennyiség (Ft)</label>
+</div>
+
+<div class="form-floating mb-3">
+    <select class="form-select" id="tipusok" aria-label="Kategóriák">
+        <option value="Tankolás">Tankolás</option>
+        <option value="Ruházat">Ruházat</option>
+        <option value="Étkezés">Étkezés</option>
+        <option value="Munkadíj">Munkadíj</option>
+    </select>
+    <label for="tipusok">Kategóriák</label>
+</div>
+ 
+<button class="btn btn-primary mb-3" onclick="addItems()">Rögzítés</button>
